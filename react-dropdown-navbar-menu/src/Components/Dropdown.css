@@ -7,12 +7,12 @@
 }
 
 .dropdown-menu li {
-  background-color: cornflowerblue;
+  background-color: rgb(57, 59, 61);
   cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-  background-color: darkblue;
+  background-color: rgb(39, 39, 65);
 }
 
 .dropdown-menu.clicked {

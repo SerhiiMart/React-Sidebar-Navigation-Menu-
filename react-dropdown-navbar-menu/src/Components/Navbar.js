@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {Button} from './Button';
 import {Link} from 'react-router-dom';
 import Dropdown from './Dropdown';
@@ -10,6 +10,14 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    (window.innerWidth < 960) ? setDropdown(false) : setDropdown(true);
+  };
+
+  const onMouseLeave = () => {
+    (window.innerWidth < 960) ? setDropdown(false) : setDropdown(false);
+  };
 
   return (
     <>
@@ -24,7 +32,10 @@ function Navbar() {
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>Home</Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+           >
             <Link to="/services" className="nav-links" onClick={closeMobileMenu}>Services<i className="fas fa-catet-down"/></Link> {dropdown && <Dropdown/>} 
           </li>
           <li className="nav-item">
