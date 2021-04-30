@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.contact-us, .consulting, .design, .home, .marketing, .products, .services, .sign-up, .development {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
