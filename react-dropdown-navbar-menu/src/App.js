@@ -12,8 +12,6 @@ import Design from './Components/Pages/Design';
 import Home from './Components/Pages/Home';
 
 
-
-
 function App() {
   return (
     <Router>
@@ -21,7 +19,7 @@ function App() {
        <Switch>
          <Route path="/" exact component={Home} />
          <Route path="/services" exact component={Services} />
-         <Route path="/producs" exact component={Products} />
+         <Route path="/products" exact component={Products} />
          <Route path="/contact-us" exact component={ContactUs} />
          <Route path="/sign-up" exact component={SignUp} />
          <Route path="/marketing" exact component={Marketing} />

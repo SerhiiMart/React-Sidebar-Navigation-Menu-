@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.contact-us, .consulting, .design, .home, .marketing, .products, .services, .sign-up, .development {
+.contact-us, .consulting, .design, .home, .marketing, .products, .services, .sign-up, .development, .products {
   display: flex;
   height: 90vh;
   align-items: center;
