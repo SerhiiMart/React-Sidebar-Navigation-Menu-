@@ -1,2 +1,2 @@
-# React-reusable-Navigation-Menus
-Reusable components made with Reactjs
+# React reusable navigation menus
+Reusable components made with React.js
